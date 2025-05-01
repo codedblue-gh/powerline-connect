@@ -1,0 +1,38 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+// vars
+
+@import 'base/vars';
+
+// ------------------------------- base styles ------------------------------
+
+// base scss
+@import 'base/set';
+@import 'base/header';
+@import 'base/footer';
+
+// common scss
+@import 'common/typo';
+@import 'common/btn';
+@import 'common/layout';
+@import 'common/form';
+
+.wrapper {
+  position: relative;
+}
+
+._show-menu {
+  overflow: hidden;
+}
+
+// --------------------------------------------------------------------------
+
+// sections
+@import 'sections/hero';
+@import 'sections/numbers';
+@import 'sections/products';
+@import 'sections/standarts';
+@import 'sections/blog';
+@import 'sections/articles';
+@import 'sections/about';

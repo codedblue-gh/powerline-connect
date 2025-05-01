@@ -1,0 +1,72 @@
+.hero {
+  padding-bottom: 14.4rem;
+  margin-bottom: 0;
+  overflow: hidden;
+
+  @media (max-width: 49em) {
+    padding-bottom: 20rem;
+  }
+
+  // .hero__container
+
+  &__container {
+    &.container {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      row-gap: 3.5rem;
+
+      height: 100dvh;
+      min-height: 90rem;
+
+      @media (max-width: 49em) {
+        row-gap: 5rem;
+
+        &::after {
+          right: -199rem;
+          font-size: 24rem;
+        }
+      }
+
+      &::after {
+        content: 'POWERLINE CONNECT';
+
+        position: absolute;
+        z-index: -1;
+        right: -267rem;
+        bottom: 0rem;
+        letter-spacing: -1rem;
+        white-space: nowrap;
+        font-size: 35rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--c-gray);
+        opacity: 0.4;
+      }
+    }
+  }
+
+  // .hero__heading
+
+  &__heading {
+    max-width: 82rem;
+  }
+
+  // .hero__text
+
+  &__text {
+    opacity: 0.5;
+
+    @media (min-width: 49.01em) {
+      max-width: 70rem;
+    }
+  }
+
+  // .hero__btn
+
+  &__btn {
+  }
+}

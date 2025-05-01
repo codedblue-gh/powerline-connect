@@ -1,0 +1,127 @@
+.numbers {
+  // .numbers__container
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8rem;
+
+    @media (max-width: 49em) {
+      row-gap: 5rem;
+    }
+  }
+
+  // .numbers__head
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+      content: '';
+
+      width: 10rem;
+      height: 10rem;
+
+      background: url(@img/logo-sm.svg) center / contain no-repeat;
+    }
+
+    @media (max-width: 49em) {
+      display: flex;
+      flex-direction: column-reverse;
+      row-gap: 8rem;
+
+      &::after {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
+  }
+
+  // .numbers__heading
+
+  &__heading {
+    max-width: 100rem;
+  }
+
+  // .numbers__body
+
+  &__body {
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    border-top: 1px solid var(--c-gray);
+
+    @media (max-width: 49em) {
+      display: flex;
+      flex-direction: column;
+      border-top: none;
+      row-gap: 8rem;
+    }
+  }
+
+  // .numbers__aside
+
+  &__aside {
+    padding-top: 4rem;
+  }
+
+  // .numbers__btn
+
+  &__btn {
+  }
+
+  // .numbers__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: 38rem 1fr;
+    row-gap: 4rem;
+  }
+
+  // .numbers__item
+
+  &__item {
+  }
+}
+
+.item-numbers {
+  position: relative;
+
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+
+  &:not(&:nth-child(1), &:nth-child(2)) {
+    border-top: 1px solid var(--c-gray);
+  }
+  @media (max-width: 49em) {
+    border-top: 1px solid var(--c-gray);
+  }
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 1px;
+    height: 4rem;
+
+    background-color: var(--c-gray);
+  }
+  // .item-numbers__heading
+
+  &__heading {
+  }
+
+  // .item-numbers__txt
+
+  &__txt {
+    opacity: 0.5;
+    text-transform: lowercase;
+  }
+}

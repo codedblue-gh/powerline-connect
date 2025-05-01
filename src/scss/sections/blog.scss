@@ -1,0 +1,150 @@
+.blog {
+  // .blog__container
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .blog__label
+
+  &__label {
+    margin-bottom: 3rem;
+
+    @media (max-width: 49em) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  // .blog__heading
+
+  &__heading {
+    margin-bottom: 5rem;
+
+    @media (min-width: 49.01em) {
+      margin-bottom: 8rem;
+
+      max-width: 80rem;
+    }
+  }
+
+  // .blog__list
+
+  &__list {
+    margin-bottom: 4rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    width: 100%;
+
+    @media (max-width: 49em) {
+      margin-bottom: 5rem;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: 3rem;
+    }
+  }
+
+  // .blog__item
+
+  &__item {
+  }
+
+  // .blog__btn
+
+  &__btn {
+  }
+}
+
+.item-blog {
+  // .item-blog__inner
+
+  &__inner {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    border-radius: 3.2rem;
+
+    background-color: var(--c-gray);
+    transition: background-color 0.4s ease-in-out;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: var(--c-dark);
+      }
+    }
+  }
+
+  // .item-blog__image-wrap
+
+  &__image-wrap {
+    height: 30rem;
+    border-radius: 3.2rem;
+    overflow: hidden;
+
+    @media (max-width: 49em) {
+      height: 50rem;
+    }
+  }
+
+  // .item-blog__image
+
+  &__image {
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 2.5rem 2rem;
+    padding-top: 0;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  // .item-blog__group
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3rem;
+  }
+
+  // .item-blog__label
+
+  &__label {
+    .btn__txt {
+      opacity: 0.5;
+    }
+  }
+
+  // .item-blog__txt
+
+  &__txt {
+    opacity: 0.5;
+  }
+
+  // .item-blog__heading
+
+  &__heading {
+  }
+
+  // .item-blog__text
+
+  &__text {
+  }
+
+  // .item-blog__btn
+
+  &__btn {
+    margin-right: auto;
+  }
+}
