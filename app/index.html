@@ -8,6 +8,45 @@
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
+	<!-- critical css for mainpage only -->
+	<style>
+		.hero {
+			padding-bottom: 14.4rem;
+			margin-bottom: 0;
+			overflow: hidden;
+		}
+
+		@media (max-width: 49em) {
+			.hero {
+				padding-bottom: 20rem;
+			}
+		}
+
+		.hero__container.container {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			row-gap: 3.5rem;
+			height: 100dvh;
+			min-height: 90rem;
+		}
+
+		@media (max-width: 49em) {
+			.hero__container.container {
+				row-gap: 5rem;
+			}
+		}
+
+		.hero__heading {
+			max-width: 82rem;
+		}
+
+		.hero__text {
+			opacity: 0.5;
+		}
+	</style>
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 	<noscript>
